@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>About Us - A Furever Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header class="center-align">
+    <img src="AdoptaPet.jpg" alt="Adopt a Pet" class="hero-img"/>
+    <h1>About A Furever Home</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li><a href="cats.html">Cats</a></li>
+        <li><a href="rabbits.html">Rabbits</a></li>
+        <li><a class="active" href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <h3>📞 718-234-8888 | ✉️ Fureverhome@gmail.com</h3>
+    </div>
+  </header>
+
+  <main class="about-content">
+    <div class="container">
+
+      <!-- Countdown -->
+      <div class="info-card adoption-event">
+        <h2 id="TimeHead">🎉 Countdown to Free Adoption Day – August 25!</h2>
+        <p>To celebrate World Adoption Day on <strong>August 25</strong>, all adoption fees will be waived to help pets find their furever homes.</p>
+        <div class="timer">
+          <span id="days">00</span> days 
+          <span id="hours">00</span> hours 
+          <span id="minutes">00</span> minutes 
+          <span id="seconds">00</span> seconds
+        </div>
+      </div>
+
+      <!-- Mission + Donate-->
+      <div class="flex-row">
+        <div class="info-card flex-item mission">
+          <h2>Our Mission</h2>
+          <p>
+            At A Furever Home, we believe every animal deserves a second chance at a loving and safe home. Our mission is to provide shelter, care, and compassion to animals in need.
+            <br><br>
+            Our shelter is a sanctuary for dogs, cats, and rabbits, where each animal receives the attention and care they deserve.
+          </p>
+        </div>
+
+        <div class="info-card flex-item donate">
+          <h2>Support Our Cause</h2>
+          <p>If you'd like to help, please consider donating. It would help us continue to support animals for many more years.</p>
+          <button class="donate-btn" onclick="location.href='#';">
+            <i class="fas fa-heart"></i> Donate Now
+          </button>          
+        </div>
+      </div>
+
+      <!-- Contact Info + Map-->
+      <div class="flex-row">
+        <div class="info-card flex-item contact-info">
+          <h2>Contact Us</h2>
+          <p><strong>Location:</strong> 1 University Plaza</p>
+          <p><strong>Email:</strong> Fureverhome@gmail.com</p>
+          <p><strong>Phone:</strong> 718-234-8888</p>
+        </div>
+
+        <div class="info-card flex-item map-container">
+          <h2>📍 Find Us on the Map</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12100.903096355369!2d-73.980753!3d40.691025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bb4852fffff%3A0xa30d7cd58cb54acd!2s1%20University%20Plz%2C%20Brooklyn%2C%20NY%2011201!5e0!3m2!1sen!2sus!4v1744771468810!5m2!1sen!2sus"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Forms -->
+      <h1>Adoption & Appointment Forms</h1>
+      <div class="form-flex-wrapper">
+        <!-- Adoption Inquiry Form -->
+        <div class="info-card flex-item">
+          <h2>Adoption Inquiry</h2>
+          <form action="https://formsubmit.co/keyanna.bernard@my.liu.edu.com" method="POST">
+            <input type="hidden" name="source" value="adoption_inquiry">
+
+            <label for="name">Full Name*</label>
+            <input id="name" name="name" required type="text" />
+
+            <label for="email">Email*</label>
+            <input id="email" name="email" required type="email" />
+
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="animal">Interested In*</label>
+            <select id="animal" name="animal" required>
+              <option value="">--Choose an animal--</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="rabbit">Rabbit</option>
+            </select>
+
+            <label for="message">Additional Questions</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Appointment Scheduler -->
+        <div class="info-card flex-item">
+          <h2>📅 Schedule Appointment</h2>
+          <form action="https://formsubmit.co/keyanna.bernard@my.liu.edu.com" method="POST">
+            <input type="hidden" name="source" value="appointment_scheduler">
+
+            <label for="name">Full Name*</label>
+            <input id="name" name="name" required type="text" />
+
+            <label for="email">Email Address*</label>
+            <input id="email" name="email" required type="email" />
+
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <label for="animal">Interested In*</label>
+            <select id="animal" name="animal" required>
+              <option value="">--Choose an animal--</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="rabbit">Rabbit</option>
+            </select>
+
+            <label for="date">Preferred Date*</label>
+            <input id="date" name="date" required type="date" />
+
+            <label for="time">Preferred Time*</label>
+            <input id="time" name="time" required type="time" />
+
+            <button type="submit">Book Appointment</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Message -->
+      <div class="info-card">
+        <section class="contact-form">
+          <h2>📬 Send Us a Message</h2>
+          <form action="https://formsubmit.co/keyanna.bernard@my.liu.edu.com" method="POST">
+            <input type="hidden" name="source" value="contact_form">
+
+            <label for="contact-message">Message (max 500 characters):</label><br>
+            <textarea id="contact-message" name="message" maxlength="500" rows="6" cols="50"></textarea><br>
+            <p id="charCount">500 characters remaining</p>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+      <!--Rate the website-->
+      <div class="rating-container">
+        <h2>Rate Our Website</h2>
+        <div class="stars" id="starRating">
+          <span data-value="1">&#9733;</span>
+          <span data-value="2">&#9733;</span>
+          <span data-value="3">&#9733;</span>
+          <span data-value="4">&#9733;</span>
+          <span data-value="5">&#9733;</span>
+        </div>
+        <p id="ratingMessage"></p>
+      </div>
+      
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 A Furever Home | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
